@@ -1,4 +1,4 @@
-package Lesson1.HomeWork.Task1;
+package Lesson1.HomeWork.Task1.ver1;
 
 // как предать имя обьекта в метод ? напрмер как вместо участник бежит написать именно человек или кот ?
 public class Main {

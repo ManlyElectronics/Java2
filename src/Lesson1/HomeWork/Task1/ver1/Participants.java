@@ -1,4 +1,4 @@
-package Lesson1.HomeWork.Task1;
+package Lesson1.HomeWork.Task1.ver1;
 
 interface Participants {
     default void Runs() {
@@ -6,7 +6,7 @@ interface Participants {
     }
 
     default void Runs(Treadmill treadmill) {
-
+        System.out.println("участник бежит по дорожке");
     }
 
     default void Jumps() {

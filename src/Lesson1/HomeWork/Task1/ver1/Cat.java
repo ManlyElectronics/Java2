@@ -1,4 +1,4 @@
-package Lesson1.HomeWork.Task1;
+package Lesson1.HomeWork.Task1.ver1;
 
     class Cat implements Participants {
         int runLimit;
