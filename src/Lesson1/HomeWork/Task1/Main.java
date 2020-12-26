@@ -16,7 +16,7 @@ public class Main {
 
         Participants[] participants = {human, robot, cat};
         for (Participants participant : participants) {
-           participant.Jumps(wall);
+           participant.Jumps(wall); // оказывается нужно было десвтия обобщить в Participants ?
            participant.Runs(treadmill);
 
         }
