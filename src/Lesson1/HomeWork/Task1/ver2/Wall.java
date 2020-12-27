@@ -4,17 +4,19 @@ public class Wall implements Obstacles {
     int height;
 
     Wall() {
-System.out.println("поставили стенку");
+        System.out.println("поставили стенку");
     }
 
     public Wall(int height) {
         this.height = height;
         System.out.println("поставили стенку высотой " + height);
     }
-    void setHeight(int height){
+
+    public void setHeight(int height) {
         this.height = height;
     }
-    int getHeight(){
+
+    public int getHeight() {
         return height;
     }
 

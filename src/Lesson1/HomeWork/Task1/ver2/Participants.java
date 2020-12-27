@@ -1,9 +1,10 @@
 package Lesson1.HomeWork.Task1.ver2;
 
-interface Participants extends Runs, Jumps{
+public interface Participants {
 
-    int runLimit = 0;
-    int jumpLimit =0;
-    boolean ready = true; // готов к соревнованиям
+    default void Pass (Obstacles obstacles){
+// System.out.println(obstacles.length); // - в дебагере видит соответссующею длинну но здесь всегда 0 !
+        System.out.println("Участник прошёл ");
 
+    }
 }
