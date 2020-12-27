@@ -6,7 +6,7 @@ public class Main {
         Human human = new Human(500,2);
         Robot robot = new Robot(1000,3);
         Cat cat = new Cat();
-        Wall wall = new Wall(1);
+        Wall wall = new Wall(3);
         Treadmill treadmill = new Treadmill(200);
         // human.Runs(treadmill);
 // cat.Runs(treadmill); // кот бежит по беговой дорожке
