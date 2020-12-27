@@ -13,6 +13,7 @@ class Robot implements Participants {
 
     @Override
     public void Pass(Obstacles obstacles) {
+        System.out.println(obstacles.getHeight());
         System.out.println("робот проходит препятсвие");
     }
 }

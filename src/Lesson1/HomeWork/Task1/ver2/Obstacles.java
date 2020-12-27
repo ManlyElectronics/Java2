@@ -5,6 +5,9 @@ public interface Obstacles {
     int height = 0;
     default void Obstacles(int length, int height){
     }
+    public default int getHeight(){
+        return height;
+    }
 
 }
 

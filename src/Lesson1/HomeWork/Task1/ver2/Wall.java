@@ -1,7 +1,7 @@
 package Lesson1.HomeWork.Task1.ver2;
 
 class Wall implements Obstacles {
-    int height;
+    public int height;
 
     Wall() {
         System.out.println("поставили стенку");
@@ -16,7 +16,7 @@ class Wall implements Obstacles {
         this.height = height;
     }
 
-    int getHeight() {
+    public int getHeight() {
         return height;
     }
 
