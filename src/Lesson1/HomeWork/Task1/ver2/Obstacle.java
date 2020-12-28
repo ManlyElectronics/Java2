@@ -1,17 +1,17 @@
 package Lesson1.HomeWork.Task1.ver2;
 
 public abstract class Obstacle {
-    public static final int oLength = 0;
-    public static final int oHeight = 0;
-    public static final String oName = null;
+    int oLength = 0;
+    int oHeight = 0;
+    String oName = null;
 
-    public int getOHeight(){
+    int getOHeight(){
         return oHeight;
     }
-    public int getOLength(){
+    int getOLength(){
       return oLength;
     }
-    public String getOName(){return oName;}
+    String getOName(){return oName;}
 
 }
 

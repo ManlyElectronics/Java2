@@ -1,8 +1,8 @@
 package Lesson1.HomeWork.Task1.ver2;
 
 class Wall extends Obstacle {
-    public int oHeight;
-    public String oName = "Стенка";
+    int oHeight;
+    String oName = "Стенка";
 
     public String getOName() {
         return oName;

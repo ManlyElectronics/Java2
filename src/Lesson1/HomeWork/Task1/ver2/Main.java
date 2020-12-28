@@ -7,7 +7,7 @@ public class Main {
         Robot robot = new Robot(1000, 3);
         Cat cat = new Cat(100, 1);
         Wall wall = new Wall(2);
-        Treadmill treadmill = new Treadmill(400);
+        Treadmill treadmill = new Treadmill(600);
 
         Obstacle[] obstacles = {treadmill, wall};
         Participant[] participants = {cat, human, robot,};

@@ -12,7 +12,7 @@ class Robot implements Participant {
 
     @Override
     public void Pass(Obstacle obstacle) {
-        if (ready == false) {
+        if (!ready) {
             System.out.println("робот не соревнуется");
             return;
         }

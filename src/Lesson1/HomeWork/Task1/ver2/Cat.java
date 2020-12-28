@@ -12,7 +12,7 @@ class Cat implements Participant {
 
     @Override
     public void Pass(Obstacle obstacle) {
-        if (ready == false) {
+        if (!ready) {
             System.out.println("кот не соревнуется");
             return;
         }
