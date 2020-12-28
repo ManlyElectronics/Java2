@@ -11,11 +11,11 @@ class Treadmill extends Obstacle {
     }
 
     @Override
-    public String getOName() {
+    String getOName() {
         return oName;
     }
 
-    public int getOLength() {
+    int getOLength() {
         return oLength;
     }
 }

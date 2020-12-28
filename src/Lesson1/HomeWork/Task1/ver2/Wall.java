@@ -4,7 +4,7 @@ class Wall extends Obstacle {
     int oHeight;
     String oName = "Стенка";
 
-    public String getOName() {
+    String getOName() {
         return oName;
     }
 
@@ -13,7 +13,7 @@ class Wall extends Obstacle {
         System.out.println("поставили стенку высотой " + oHeight);
     }
 
-    public int getOHeight() {
+    int getOHeight() {
         return oHeight;
     }
 
