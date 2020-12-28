@@ -7,7 +7,7 @@ class Cat implements Participant {
 
     Cat(int runLimit, int jumpLimit) {
         this.jumpLimit = jumpLimit;
-        this.runLimit = jumpLimit;
+        this.runLimit = runLimit;
     }
 
     @Override
@@ -16,18 +16,17 @@ class Cat implements Participant {
             System.out.println("кот не соревнуется");
             return;
         }
-
-        if (obstacle.getLength() > runLimit) {
-            System.out.println("робот выбыл из соревнований, дорожка слишком длинная");
+        if (obstacle.getOLength() > runLimit) {
+            System.out.println("кот выбыл из соревнований, дорожка слишком длинная");
             ready = false;
             return;
         }
-        if (obstacle.getHeight() > jumpLimit) {
+        if (obstacle.getOHeight() > jumpLimit) {
             System.out.println("Кот не смог перепрыгнуть эту высоту и выбыл из соревнований");
             ready = false;
             return;
         }
-        System.out.println("кот преодолел " + obstacle.getoName());
+        System.out.println("кот преодолел " + obstacle.getOName());
     }
 
 }

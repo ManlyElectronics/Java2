@@ -1,24 +1,20 @@
 package Lesson1.HomeWork.Task1.ver2;
 
 class Wall extends Obstacle {
-    public int height;
+    public int oHeight;
     public String oName = "Стенка";
 
-    Wall() {
-        System.out.println("поставили стенку");
-    }
-
-    public String getoName() {
+    public String getOName() {
         return oName;
     }
 
-    Wall(int height) {
-        this.height = height;
-        System.out.println("поставили стенку высотой " + height);
+    Wall(int oHeight) {
+        this.oHeight = oHeight;
+        System.out.println("поставили стенку высотой " + oHeight);
     }
 
-    public int getHeight() {
-        return height;
+    public int getOHeight() {
+        return oHeight;
     }
 
 }

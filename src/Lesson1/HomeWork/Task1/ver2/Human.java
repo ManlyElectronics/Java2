@@ -16,16 +16,16 @@ class Human implements Participant {
             System.out.println("человек не соревнуется");
             return;
         }
-        if (obstacle.getLength() > runLimit) {
+        if (obstacle.getOLength() > runLimit) {
             System.out.println("человек выбыл из соревнований, дорожка слишком длинная");
             ready = false;
             return;
         }
-        if (obstacle.getHeight() > jumpLimit) {
+        if (obstacle.getOHeight() > jumpLimit) {
             System.out.println("человек не смог перепрыгнуть эту высоту и выбыл из соревнований");
             ready = false;
             return;
         }
-        System.out.println("человек преодолел " + obstacle.getoName());
+        System.out.println("человек преодолел " + obstacle.getOName());
     }
 }

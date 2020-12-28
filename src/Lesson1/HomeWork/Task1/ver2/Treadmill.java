@@ -1,22 +1,21 @@
 package Lesson1.HomeWork.Task1.ver2;
 
 class Treadmill extends Obstacle {
-    int treadmillLength;
+    int oLength;
     String oName = "беговая дорожка";
 
 
-
-Treadmill(int treadmillLength){
-    this.treadmillLength = treadmillLength;
-    System.out.println("запустили дорожку длинной " + treadmillLength);
-}
+    Treadmill(int oLength) {
+        this.oLength = oLength;
+        System.out.println("запустили дорожку длинной " + oLength);
+    }
 
     @Override
-    public String getoName() {
+    public String getOName() {
         return oName;
     }
 
-    public int get() {
-        return treadmillLength;
+    public int getOLength() {
+        return oLength;
     }
 }

@@ -7,7 +7,7 @@ class Robot implements Participant {
 
     Robot(int runLimit, int jumpLimit) {
         this.jumpLimit = jumpLimit;
-        this.runLimit = jumpLimit;
+        this.runLimit = runLimit;
     }
 
     @Override
@@ -16,18 +16,17 @@ class Robot implements Participant {
             System.out.println("робот не соревнуется");
             return;
         }
-
-        if (obstacle.getLength() > runLimit) {
+        if (obstacle.getOLength() > runLimit) {
             System.out.println("робот выбыл из соревнований, дорожка слишком длинная");
             ready = false;
             return;
         }
-        if (obstacle.getHeight() > jumpLimit) {
+        if (obstacle.getOHeight() > jumpLimit) {
             System.out.println("робот не смог перепрыгнуть эту высоту и выбыл из соревнований");
             ready = false;
             return;
         }
-        System.out.println("Робот преодолел " + obstacle.getoName());
+        System.out.println("Робот преодолел " + obstacle.getOName());
     }
 
 }
